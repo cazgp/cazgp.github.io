@@ -1,0 +1,39 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+    font-family: 'wibblesregular';
+    src: url('../font/wibbles_-webfont.woff2') format('woff2'),
+         url('../font/wibbles_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header {
+  background-color: #95ba39;
+  background-image: url('../img/header.png');
+  width: 100%;
+}
+
+#header p {
+  padding-left: 2vw;
+  display: inline;
+  color: #654321;
+  font-size: 35px;
+  font-family: 'wibblesregular';
+  -webkit-text-stroke: 1.4px yellow;
+}
+
+#header .fa-bars {
+  color: yellow;
+  vertical-align: -0.2vh;
+}
+
+#content {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  text-align: justify;
+  font-family: Palatino;
+}
