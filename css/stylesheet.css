@@ -1,6 +1,14 @@
-html, body, p {
+html, body, p, figure {
   padding: 0;
   margin: 0;
+}
+
+body {
+  padding-bottom: 100px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 @font-face {
@@ -21,9 +29,13 @@ html, body, p {
 
 #site-title {
   font-family: 'wibblesregular';
-  font-size: 40px;
+  font-size: 39px;
   color: #654321;
   -webkit-text-stroke: 1.4px yellow;
+}
+
+#site-title a:visited {
+  color: inherit;
 }
 
 #header .fa-angle-down {
@@ -37,31 +49,6 @@ html, body, p {
   font-size: 20px;
   padding-bottom: 3vh;
   padding-top: 4vh;
-}
-
-#menu.menu-shown {
-  left: 0;
-}
-
-#menu {
-  position: fixed;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom right, yellow, green);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  font-size: 20px;
-  transition: left 0.5s cubic-bezier(.46,.03,.52,.96);
-}
-
-#menu div {
-  padding: 10px 0;
 }
 
 #menu-out {
@@ -82,6 +69,46 @@ html, body, p {
   cursor: pointer;
 }
 
+#menu.menu-shown {
+  left: 0;
+}
+
+.worm-link {
+  font-family: wibblesregular;
+  color: rgba(0,0,0,0.6);
+  text-decoration: none;
+  font-size: 8vw;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, yellow, green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: left 0.5s cubic-bezier(.46,.03,.52,.96);
+  font-size: 10vw;
+}
+
+#menu div {
+  padding: 10px 0;
+}
+
+#menu a:visited {
+  color: inherit;
+}
+
+#menu a.active {
+  text-decoration: underline;
+}
+
 #content {
   padding-left: 10vw;
   padding-right: 10vw;
@@ -95,6 +122,24 @@ html, body, p {
 
 #text {
   max-width: 560px;
+}
+
+#text p {
+  margin: 18px 0;
+}
+
+#text #date {
+  font-style: italic;
+  font-size: 11px;
+  text-align: center;
+}
+
+#text img {
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
 }
 
 @media only screen
@@ -117,6 +162,9 @@ and (min-device-width : 415px) {
   #header .fa-bars {
     padding: 0 2.5vw;
   }
+  #text .worm-link {
+    font-size: 4vw;
+  }
 }
 
 @media only screen
@@ -130,5 +178,8 @@ and (min-device-width : 1025px) {
   }
   #header .fa-bars {
     padding: 0 2.5vw;
+  }
+  #text .worm-link {
+    font-size: 4vw;
   }
 }
