@@ -180,6 +180,6 @@ and (min-device-width : 1025px) {
     padding: 0 2.5vw;
   }
   #text .worm-link {
-    font-size: 4vw;
+    font-size: 2vw;
   }
 }
