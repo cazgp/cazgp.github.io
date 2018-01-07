@@ -1,8 +1,10 @@
-{% block front_matter %}{% endblock %}
+---
+permalink: /404.html
+---
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-    <title>Worm Food | {% block page_title %}{% endblock %}</title>
+    <title>Worm Food | 404</title>
     <meta charset="utf-8"/>
     <link href="/css/stylesheet.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
@@ -28,9 +30,11 @@
       <div><a href="/contact" class="worm-link">Contact</a></div>
     </div>
     <div id="content">
-      <span id="sub-title">{% block subtitle %}{% endblock %}</span>
+      <span id="sub-title">404 Worm Not Found</span>
       <div id="text">
-        {% block content %}{% endblock %}
+<div class="wormy">
+  Oops! No worms to see here.
+</div>
       </div>
     </div>
   </body>
